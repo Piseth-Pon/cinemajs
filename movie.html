@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Major Cinema</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h4>MAJOR CINEMA</h4>
+    </div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="movie.html" class="active">MOVIES</a>
+      <a href="cinema.html">CINEMAS</a>
+      <a href="#">PROMOTIONS</a>
+    </nav>
+    <div class="icons">
+      <a href="#" class="currentMode">
+        <ion-icon name="sunny"></ion-icon>
+      </a>
+      <a href="#sidenav" id="menuBtn">
+        <ion-icon name="menu"></ion-icon>
+      </a>
+    </div>
+  </header>
+
+  <!-- Sidenav -->
+  <div class="sidenav" id="sidenav">
+    <a href="index.html" class="active">HOME</a>
+    <a href="movie.html">MOVIES</a>
+    <a href="cinema.html">CINEMAS</a>
+    <a href="#">PROMOTIONS</a>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+
+    <div class="slide">
+      <img src="./images/banner1.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/banner2.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/banner3.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/banner4.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/banner5.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/banner6.png" alt="">
+    </div>
+
+
+
+
+
+
+    <div class="socials">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-youtube"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-wechat"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <h2 class="section-title">ALL MOVIES</h2>
+
+    <div class="movies-wrapper">
+
+      <!-- <div class="movie">
+        <div class="movie-thumbnail">
+          <img src="..." alt="">
+        </div>
+        <div class="movie-detail">
+          <h4>TITLE</h4>
+          <div class="movie-info">
+            <p>
+              <ion-icon name="calendar-number"></ion-icon>
+              RELEASED DATE
+            </p>
+            <p>
+              <ion-icon name="alarm"></ion-icon>
+              DURATION
+            </p>
+            <p>
+              <ion-icon name="pricetag"></ion-icon>
+              CATEGORY
+            </p>
+          </div>
+  
+          <div class="btn-group">
+            <button class="btn btn-main" id="showDetailBtn" data-movie="....">SHOW DETAIL</button>
+          </div>
+  
+        </div>
+      </div> -->
+
+
+
+
+
+    </div>
+    <!-- Movie Modal Detail -->
+    <section class="movie-modal hideModal">
+      <!-- <div class="modal-container">
+        <div class="modal-header">
+          <h1>TITLE <span class="closeBtn"><ion-icon name="close-circle"></ion-icon></span></h1>
+          <div class="tabbar">
+            <button class="tab-btn active" data-id="detail">Detail</button>
+            <button class="tab-btn" data-id="video">Video</button>
+            <button class="tab-btn" data-id="reviews">Reviews</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <section class="tab detail-tab active-tab" id="detail">
+            <p>
+              <ion-icon name="information-circle"></ion-icon>
+              <span class="text">OVERVIEW</span>
+            </p>
+            <p>
+              <ion-icon name="pricetags"></ion-icon>
+              <span class="text">CATEGORY</span>
+            </p>
+            <p>
+              <ion-icon name="alarm"></ion-icon>
+              <span class="text">DURATION</span>
+            </p>
+            <p>
+              <ion-icon name="calendar-number"></ion-icon>
+              <span class="text">RELEASED DATE</span>
+            </p>
+          </section>
+
+          <section class="tab video-tab" id="video">
+            <iframe src="" allowfullscreen></iframe>
+          </section>
+
+          <section class="tab review-tab" id="reviews">
+            <div class="review">
+              <img src="./images/profile.png" alt="">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, porro!
+              </p>
+            </div>
+
+          </section>
+
+
+
+        </div>
+      </div> -->
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>MOVIE</h4>
+      <a href="#">NOW SHOWING</a>
+      <a href="#">COMING SOON</a>
+      <a href="#">CINEMA</a>
+      <a href="#">NEWS & ACTIVITY</a>
+    </div>
+    <div class="type">
+      <h4>SYSTEM TYPE</h4>
+      <a href="#">4DX</a>
+      <a href="#">IMAX</a>
+      <a href="#">KIDS CINEMA</a>
+      <a href="#">SCREEN X</a>
+    </div>
+    <div class="contact">
+      <h4>MOVIE LINE</h4>
+      <h3>098-888-126</h3>
+      <div class="socials">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-wechat"></ion-icon>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./detail.js"></script>
+
+</body>
+
+</html>

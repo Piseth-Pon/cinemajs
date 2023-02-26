@@ -1,0 +1,88 @@
+@media only screen and (min-width: 768px) {
+  /* body {
+    background-color: darkblue;
+  } */
+
+  /* .icons a {
+    display: none;
+  } */
+  #menuBtn {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  header nav {
+    padding: 0 12.5px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-content: center;
+    justify-content: start;
+    gap: 25px;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px 25px;
+  }
+
+  .movies-wrapper {
+    grid-template-columns: repeat(3, minmax(225px, 275px));
+    /* grid-auto-rows: 400px; */
+  }
+
+  footer {
+    padding: 15px 25px;
+    
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 50px;
+    justify-items: center;
+  }
+
+  footer > div:nth-child(1),
+  footer > div:nth-child(2) {
+    display: grid;
+
+    justify-self: start;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+
+  header {
+    padding: 15px 50px;
+  }
+
+  .cinemas-wrapper {
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 15px 100px;
+  }
+
+  main,
+  footer {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .movies-wrapper {
+    grid-template-columns: repeat(4, minmax(225px, 275px));
+  }
+}
